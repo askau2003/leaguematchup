@@ -5,7 +5,7 @@ LeagueMatchup is a personal web app designed to help League of Legends players k
 ## Features
 
 - Searching for a champion
-- Champion icons shown in table for easy recognition
+- Champion icons shown in table for easy recognition of the enemy
 - Edit notes for each unique champion matchup
 
 ## Tech Stack
@@ -16,7 +16,7 @@ LeagueMatchup is a personal web app designed to help League of Legends players k
 - **HTML & CSS**
 - **MySQL Workbench**
 
-## Screenshot
+## Screenshots
 
 ![image](https://github.com/user-attachments/assets/8b66b12f-2329-479c-8e19-251dbc44368e)
 ![image](https://github.com/user-attachments/assets/dbc3e5e0-1879-45af-b1cd-496fdd2dd563)
