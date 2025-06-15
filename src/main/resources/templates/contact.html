@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/css/header.css">
+
+    <style>
+        .flex {
+            display: flex; /* flex */
+            flex-direction: column; /* kolonne */
+            justify-content: center; /* horizontalt */
+            align-items: center; /* vertikalt */
+        }
+
+        .flex a,
+        .flex p {
+            margin: 10px; /* plads rundt om hyperlinks og paragrafs i flex klassen */
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div th:replace="~{fragments/header :: header}"></div>
+
+<div class="flex">
+    <p>Made by <span style="text-decoration: underline;">Asger Laurids Søborg-Skau</span></p>
+    <a style="text-decoration: underline; color: blue;" href="https://github.com/askau2003">GitHub Link</a>
+</div>
+
+</body>
+</html>

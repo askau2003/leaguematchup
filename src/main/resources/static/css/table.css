@@ -1,0 +1,27 @@
+.tabel {
+    flex-grow: 1; /* fyld så meget så muligt */
+    margin: 10px; /* plads rundt om */
+}
+
+.tabel table {
+    width: 100%; /* sikrer maksimal størrelse */
+}
+
+th {
+    font-size: 20px; /* skriftstørrelse på tableheads */
+}
+
+table, tr, th, td {
+    border-collapse: collapse; /* ikke dobbelt linjet */
+    border: 3px solid black; /* 3 pixels solid sort border */
+    padding: 5px; /* 5px rundt om tekst/billeder i celler */
+}
+
+.textalign {
+    text-align: center;
+}
+
+.icon-table {
+    width: 64px; /* icon bredde */
+    height: 64px; /* icon højde */
+}

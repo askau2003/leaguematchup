@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${championName}">Champion Name</title>
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/table.css">
+
+    <style>
+        .content {
+            display: flex; /* flexer alt content */
+            height: calc(100vh - 75px); /* viewheight (skærmstørrelse) - 75px (størrelse på header */
+        }
+    </style>
+
+</head>
+<body>
+
+<div th:replace="~{fragments/header :: header}"></div>
+
+<div class="content">
+
+    <div th:replace="~{fragments/sidebar :: sidebar}"></div>
+
+    <div th:replace="~{fragments/table :: table}"></div>
+
+</div>
+
+</body>
+</html>

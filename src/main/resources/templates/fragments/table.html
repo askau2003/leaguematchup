@@ -1,0 +1,30 @@
+<div th:fragment="table" class="tabel">
+<table>
+        <colgroup>
+            <col style="width: 100px;">
+            <col style="width: 100px;">
+            <col style="width: auto;">
+            <col style="width: 100px;">
+        </colgroup>
+        <tr>
+            <th>Icon</th>
+            <th>Enemy</th>
+            <th>Notes</th>
+            <th>Edit note</th>
+        </tr>
+        <tr th:each="matchup : ${matchupsList}">
+            <td class="textalign">
+                <!-- variablen {icon} sættes ind, derefter får thymeleaf at vide hvor den skal få variablen fra -->
+                <img class="icon-table" th:src="@{/images/ChampionIcons15.11.1/{icon}(icon=${matchup.icon})}"
+                     alt="Enemy Icon"/>
+            </td>
+            <td class="textalign" th:text="${matchup.enemy}"></td>
+            <td th:text="${matchup.notes}"></td>
+            <td class="textalign">
+                <a th:href="@{'/updateNote/'+${matchup.matchup_id}}">
+                    <button>Edit Note</button>
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>

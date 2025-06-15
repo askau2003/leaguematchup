@@ -1,0 +1,43 @@
+* {
+    margin: 0; /* standard for siden */
+    padding: 0; /* standard for siden */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* standard for siden */
+}
+
+body {
+    background-color: rgb(255, 240, 219); /* standard for body */
+}
+
+a {
+    text-decoration: none; /* fjerner text dekoration */
+    color: black; /* farve til sort */
+}
+
+.header {
+    display: flex; /* flex header */
+    justify-content: space-between; /* så meget plads så muligt mellem content */
+    background-color: rgb(255, 250, 240); /* baggrundsfarve */
+    height: 75px; /* højde */
+}
+
+.headerlogo {
+    display: flex; /* flex logoet */
+    align-content: center; /* centrer vertikalt */
+    flex-wrap: wrap; /* må ikke være nowrap for at align-content virker */
+    padding: 10px; /* plads rundt om */
+}
+
+.headerlogo a {
+    color: rgb(142, 209, 101); /* farve på logoet */
+    font-weight: bold; /* fed skrift */
+    font-size: 25px; /* skrift-størrelse */
+}
+
+.contact {
+    padding: 10px; /* plads rundt om */
+}
+
+.contact a {
+    color: rgb(142, 209, 101); /* farve på kontakt tekst */
+    font-weight: bold; /* fed skrift */
+}

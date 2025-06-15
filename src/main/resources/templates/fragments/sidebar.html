@@ -1,0 +1,10 @@
+<div th:fragment="sidebar" class="sidebar">
+
+    <div class="icon">
+        <img th:src="@{/images/ChampionIcons15.11.1/{champion}.png(champion=${championName})}" alt="Champion Icon">
+    </div>
+
+    <div class="name">
+        <h1 th:text="${championName}">Champion Name</h1>
+    </div>
+</div>

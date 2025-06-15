@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LeagueMatchups</title>
+    <link rel="stylesheet" href="/css/header.css">
+
+    <style>
+        .heading {
+            text-align: center; /* centrer overskrift */
+            color: rgb(142, 209, 101); /* overskrift farve */
+            font-weight: bold; /* fed skrift */
+            font-size: 50px; /* skrift størrelse */
+            margin: 20px;
+        }
+
+        form {
+            display: flex; /* flex formen */
+            justify-content: center; /* centrer horizontalt */
+        }
+
+        input {
+            width: 350px; /* bredde på search bar */
+            height: 35px; /* højde på search bar */
+        }
+
+        .championGrid {
+            margin-top: 40px; /* plads på toppen */
+            padding: 20px; /* plads mellem */
+            display: flex; /* flex */
+            justify-content: space-evenly; /* horizontalt */
+            flex-wrap: wrap; /* må gå videre på næste linje */
+        }
+
+        .champLogo {
+            width: 80px; /* bredde */
+        }
+    </style>
+
+</head>
+<body>
+
+<div th:replace="~{fragments/header :: header}"></div>
+
+<h1 class="heading">Ⓛ LeagueMatchup</h1>
+
+<form method="get" action="search">
+    <input list="champions" type="text" name="championName" placeholder="Search for Champion" required>
+</form>
+
+<div th:replace="~{fragments/championList :: championList}"></div>
+
+<div class="championGrid">
+    <div th:each="champion : ${matchupList}">
+        <a th:href="@{/search(championName=${champion})}">
+            <img class="champLogo" th:src="@{'/images/ChampionIcons15.11.1/' + ${champion} + '.png'}" alt="Champion Icon">
+        </a>
+        <h2 style="text-align: center;" th:text="${champion}"></h2>
+    </div>
+</div>
+
+</body>
+</html>

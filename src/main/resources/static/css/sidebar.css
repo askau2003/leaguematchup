@@ -1,0 +1,21 @@
+.sidebar {
+    display: flex; /* flex sidebaren */
+    flex-direction: column; /* kolonne */
+    background-color: rgb(255, 245, 230); /* baggrundsfarve */
+    width: 243px; /* bredde */
+    height: 100%; /* højde */
+}
+
+.sidebar div {
+    margin: 10px; /* margin på alt indhold der er divet */
+}
+
+.icon {
+    display: flex; /* flex icon */
+    justify-content: center; /* centrer icon */
+}
+
+.name {
+    display: flex; /* flex name */
+    justify-content: center; /* centrer name */
+}
