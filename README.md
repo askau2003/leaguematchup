@@ -16,7 +16,7 @@ LeagueMatchup is a personal web app designed to help League of Legends players k
 - **HTML & CSS**
 - **MySQL Workbench**
 
-## 📸 Screenshot
+## Screenshot
 
 ![image](https://github.com/user-attachments/assets/8b66b12f-2329-479c-8e19-251dbc44368e)
 ![image](https://github.com/user-attachments/assets/dbc3e5e0-1879-45af-b1cd-496fdd2dd563)
