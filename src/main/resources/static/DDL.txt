@@ -1,0 +1,10 @@
+CREATE SCHEMA leaguematchup;
+USE leaguematchup;
+
+create table matchups (
+matchup_id INT AUTO_INCREMENT PRIMARY KEY,
+champion varchar(50),
+icon varchar(255),
+enemy varchar(50),
+notes TEXT
+);
