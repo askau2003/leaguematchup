@@ -21,7 +21,7 @@ public class MatchupsRepository {
     }
 
 
-    // Bruges til at få en liste med med champions der har matchups.
+    // Used to get a list of champions with existing matchups
     public List<String> championsWithMatchups() {
         String sql = "SELECT champion FROM matchups GROUP BY champion";
         return template.queryForList(sql, String.class);

@@ -1,20 +1,20 @@
 .tabel {
-    flex-grow: 1; /* fyld så meget så muligt */
-    margin: 10px; /* plads rundt om */
+    flex-grow: 1;
+    margin: 10px;
 }
 
 .tabel table {
-    width: 100%; /* sikrer maksimal størrelse */
+    width: 100%;
 }
 
 th {
-    font-size: 20px; /* skriftstørrelse på tableheads */
+    font-size: 20px;
 }
 
 table, tr, th, td {
-    border-collapse: collapse; /* ikke dobbelt linjet */
-    border: 3px solid black; /* 3 pixels solid sort border */
-    padding: 5px; /* 5px rundt om tekst/billeder i celler */
+    border-collapse: collapse;
+    border: 3px solid black;
+    padding: 5px;
 }
 
 .textalign {
@@ -22,6 +22,6 @@ table, tr, th, td {
 }
 
 .icon-table {
-    width: 64px; /* icon bredde */
-    height: 64px; /* icon højde */
+    width: 64px;
+    height: 64px;
 }

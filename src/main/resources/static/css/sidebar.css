@@ -1,21 +1,21 @@
 .sidebar {
-    display: flex; /* flex sidebaren */
-    flex-direction: column; /* kolonne */
-    background-color: rgb(255, 245, 230); /* baggrundsfarve */
-    width: 243px; /* bredde */
-    height: 100%; /* højde */
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 245, 230);
+    width: 243px;
+    height: 100%;
 }
 
 .sidebar div {
-    margin: 10px; /* margin på alt indhold der er divet */
+    margin: 10px;
 }
 
 .icon {
-    display: flex; /* flex icon */
-    justify-content: center; /* centrer icon */
+    display: flex;
+    justify-content: center;
 }
 
 .name {
-    display: flex; /* flex name */
-    justify-content: center; /* centrer name */
+    display: flex;
+    justify-content: center;
 }

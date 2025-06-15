@@ -14,7 +14,7 @@
         </tr>
         <tr th:each="matchup : ${matchupsList}">
             <td class="textalign">
-                <!-- variablen {icon} sættes ind, derefter får thymeleaf at vide hvor den skal få variablen fra -->
+                <!-- Inserts {icon} dynamically from the specific path -->
                 <img class="icon-table" th:src="@{/images/ChampionIcons15.11.1/{icon}(icon=${matchup.icon})}"
                      alt="Enemy Icon"/>
             </td>

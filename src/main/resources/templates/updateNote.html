@@ -7,18 +7,18 @@
 
     <style>
         form {
-            display: flex; /* flexer form */
-            flex-direction: column; /* skal gå i kolonner */
-            justify-content: center; /* centrer horizontalt */
-            align-items: center; /* centrer vertikalt */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         textarea {
-            margin: 10px; /* plads rundt om */
+            margin: 10px;
         }
 
         label {
-            margin-top: 20px; /* plads på toppen */
+            margin-top: 20px;
         }
     </style>
 
@@ -29,7 +29,7 @@
 
 
 <form action="/updateNote" method="post">
-    <!-- updateNote metoden skal også bruge et matchup_id for at finde det korrekte matchup, det fikser vi ved at have et hidden matchup_id -->
+    <!-- updateNote method needs matchup_id to find correct matchup, therefore a hidden input -->
     <input type="hidden" name="matchup_id" th:value="${matchup.matchup_id}">
     <label for="note">Note: </label>
     <textarea placeholder="Type in your notes here" rows="10" cols="40" name="notes" id="note" th:text="${matchup.notes}"></textarea>

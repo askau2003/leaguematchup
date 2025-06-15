@@ -20,8 +20,7 @@ public class HomeController {
         this.matchupsService = matchupsService;
     }
 
-
-    // Standard forside
+    // Root
     @GetMapping("/")
     public String homepage(Model model) {
 
@@ -39,7 +38,8 @@ public class HomeController {
     @GetMapping("/search")
     public String searchChampion(@RequestParam("championName") String championName, Model model) {
 
-        // Sætter det første bogstav til at være UpperCase og resterende til at være LowerCase
+        // Sets the first letter to be uppercase no matter what, the rest should be lowercase.
+        // This should be replaced by taking the names for the champions directly from Riots API
         String formateretChampionName = championName.substring(0, 1).toUpperCase() + championName.substring(1).toLowerCase();
 
         List<Matchups> matchupsList = matchupsService.selectMatchup(championName);
